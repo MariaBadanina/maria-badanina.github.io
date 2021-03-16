@@ -1,0 +1,179 @@
+<!doctype html>
+<!--    Hello there! Nice two see you! I made this site with love from scratch and I'm happy that you come to check my code ;)   -->
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,500,800,900" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/normalize.css" />
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126568093-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-126568093-1');
+	</script>
+	<!-- Google Analytics end -->
+	<title>Maria Badanina — Portfolio</title>
+</head>
+
+<body id="body" class="main loading">
+	<div id="preloader" class="preloader">
+		<div class="loader"></div>
+	</div>
+	<header class="header">
+		<div id="btn_1" class="header__logo-box"> <a href="#index" class="header__logo">
+				<!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35.4 18.9"
+					style="enable-background:new 0 0 35.4 18.9;" xml:space="preserve">
+					<path class="header__logo-path" d="M12.1,16.6c0,0-7,0-8.2,0s-2.4-1.3-1.6-2.8S7.6,4.3,8.4,3c0.7-1.2,2.5-1.4,3.3,0C12.5,4.4,19,15.6,19,15.6
+		s0.6,0.9,1.6,0.9s9.1,0,10.5,0s2.3-1.5,1.6-2.8C32,12.4,27.3,4.4,26.5,3s-2.6-1.2-3.3,0S21,6.8,21,6.8" />
+				</svg> -->
+			</a> </div>
+		<div class="header__nav-box">
+			<nav class="header__nav">
+				<ul>
+					<li id="btn_2" class="header__nav-item"> <a class="header__nav-link" href="#about">About</a>
+						<div class="header__nav-line"></div>
+					</li>
+					<li id="btn_3" class="header__nav-item"> <a class="header__nav-link" href="#work">Work</a>
+						<div class="header__nav-line"></div>
+					</li>
+					<li id="btn_4" class="header__nav-item"> <a class="header__nav-link" href="#contact">Contact</a>
+						<div class="header__nav-line"></div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="canvas__container">
+		<canvas class="scene" id="canvas"></canvas>
+	</div>
+	<section id="main" class="section">
+		<div class="section__text">DESIGN&#160;+&#160;CODE</div>
+	</section>
+	<section id="about" class="section">
+		<div class="section__about">
+			<div class="section__about-text">
+				<div class="section__about-title">
+					Hi, I'm Maria
+					<div class="palm"></div>
+				</div>
+				<div class="section__about-p">
+					<p> I'm a Russian girl living in Madrid.
+						I have a bachelor's degree in <span class="line"> graphic design</span> and
+						also I can write <span class="line">some code</span>.
+						I know how to create <span class="line">adaptive</span> web pages
+						with a nice <span class="line">animation</span> and I like to learn
+						and try new stuff in web.</p>
+					<p> I'm currently looking for a <span class="line">full-time</span> job
+						like a junior designer or/and front-end developer
+						in a company with an <span class="line">awesome</span> team.</p>
+				</div>
+				<a href="img/resume.pdf" target="_blank" class="btn">
+					<div class="section__about-up">Resume</div>
+					<div class="section__about-up">Resume</div>
+				</a>
+			</div>
+			<div class="section__about-img">
+				<div class="section__about-rotated"></div>
+			</div>
+		</div>
+	</section>
+	<section id="work" class="section">
+		<div class="section__work">
+			<div class="section__work-img_container">
+				<div class="section__work-img img_1"></div>
+				<div class="section__work-img img_2"></div>
+				<div class="section__work-img img_3"></div>
+				<div class="section__work-img img_4"></div>
+				<div class="section__work-img img_5"></div>
+			</div>
+			<div class="section__work-text">
+				<!-- works -->
+				<div class="sections__work-numbers"> 
+					<span class="sections__work-current"> 
+						<span onClick="currentSlide(1)" class="sections__work-inner">01</span> 
+						<span onClick="currentSlide(2)" class="sections__work-inner">02</span> 
+						<span onClick="currentSlide(3)" class="sections__work-inner">03</span> 
+						<span onClick="currentSlide(4)" class="sections__work-inner">04</span> 
+						<span onClick="currentSlide(5)" class="sections__work-inner">05</span> 
+					</span> 
+					<span class="sections__work-total">05</span>
+					<div class="clear"></div>
+				</div>
+				<div class="section__work-title">
+					<div onClick="currentSlide(1)" class="section__work-name">TUNEL</div>
+					<div onClick="currentSlide(2)" class="section__work-name">DREAMER</div>
+					<div onClick="currentSlide(3)" class="section__work-name">MANFRED</div>
+					<div onClick="currentSlide(4)" class="section__work-name">TV GUIDE</div>
+					<div onClick="currentSlide(5)" class="section__work-name">ROUTER</div>
+				</div>
+				<div class="section__work-dsc_cont">
+					<div onClick="currentSlide(1)" class="section__work-p">
+						<div class="section__work-p_introduction">Design and development of a website for a restaurant
+							of traditional Valencian cuisine</div>
+						<div class="section__work-p_bold">design, front-end development, content</div>
+					</div>
+					<div onClick="currentSlide(2)" class="section__work-p">
+						<div class="section__work-p_introduction">Design concept of home page for outdoor clothing &#38;
+							gear online shop</div>
+						<div class="section__work-p_bold">design, front-end, brand identity, illustration</div>
+					</div>
+					<div onClick="currentSlide(3)" class="section__work-p">
+						<div class="section__work-p_introduction">Open source project for build a JSON-based resume</div>
+						<div class="section__work-p_bold">UI, layout, front-end development</div>
+					</div>
+					<div onClick="currentSlide(4)" class="section__work-p">
+						<div class="section__work-p_introduction">Individual project created during intensive course in Adalab to learn Ajax technology and local data storage</div>
+						<div class="section__work-p_bold">UI, layout, front-end development</div>
+					</div>
+					<div onClick="currentSlide(5)" class="section__work-p">
+						<div class="section__work-p_introduction">Individual project created during intensive course in Adalab to learn React Router and data filtering with React</div>
+						<div class="section__work-p_bold">UI, layout, front-end development</div>
+					</div>
+				</div>
+				<div class="section__work-btn_container">
+					<div onClick="plusSlides(-1)" class="section__work-btn">
+						<div class="section__work-arrow_left"></div>
+					</div>
+					<div class="section__work-view"> 
+						<a onClick="currentSlide(1)" href="tunel.html" target="_blank" class="section__work-up">View</a> 
+						<a onClick="currentSlide(2)" href="dreamer.html" target="_blank" class="section__work-up">View</a> 
+						<a onClick="currentSlide(3)" href="manfred.html" target="_blank" class="section__work-up">View</a> 
+						<a onClick="currentSlide(4)" href="http://beta.adalab.es/e-s2-evaluacion-final-maria-badanina/" target="_blank" class="section__work-up">View</a> 
+						<a onClick="currentSlide(5)" href="http://beta.adalab.es/e-s3-evaluacion-final-maria-badanina/#/" target="_blank" class="section__work-up">View</a> 
+					</div>
+					<div onClick="plusSlides(1)" class="section__work-btn">
+						<div class="section__work-arrow_right"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contact" class="section">
+		<a class="section__contact-mail" href="mailto:maria.badanina.s@gmail.com">maria.badanina.s@gmail.com</a>
+		<div class="section__contact-icons">
+			<a href="https://codepen.io/Melancholia/" target="_blank" class="codepen social-ico"></a>
+			<a href="https://www.instagram.com/maria__badanina/" target="_blank" class="instagram social-ico"></a>
+			<a href="https://dribbble.com/Melancholia" target="_blank" class="dribbble social-ico"></a>
+			<a href="https://www.linkedin.com/in/mariabadanina/" target="_blank" class="linkedin social-ico"></a>
+			<a href="https://github.com/maria-badanina" target="_blank" class="github social-ico"></a>
+			<a href="https://twitter.com/MariaBadanina" target="_blank" class="twitter social-ico"></a>
+		</div>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.7/TweenMax.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/tilt.js@1.1.19/dest/tilt.jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
+	<script src="js/perlin.js"></script>
+	<script src="js/preloader.js"></script>
+	<script src="js/background.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>
